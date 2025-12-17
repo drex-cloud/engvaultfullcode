@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EngiVault | Secure Login</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="auth-mode">
+
+  <div class="auth-card">
+    <div class="auth-header">
+      <div class="auth-title">EngiVault Portal</div>
+      <div class="auth-subtitle">Authorized Engineering Personnel Only</div>
+    </div>
+
+    <div id="status-terminal" class="hidden"
+      style="margin-bottom: 20px; padding: 12px; border-radius: 4px; font-size: 0.85rem; text-align: left; border-left: 4px solid #3b82f6; background: #f0f7ff; color: #1e40af;">
+      <div
+        style="font-weight: 800; text-transform: uppercase; font-size: 0.65rem; margin-bottom: 4px; letter-spacing: 1px;">
+        System Status</div>
+      <div id="status-text" style="font-family: 'Courier New', monospace;">Initializing secure handshake...</div>
+    </div>
+
+    <form id="login-form">
+      <div class="form-group">
+        <label>System ID (Username)</label>
+        <input type="text" id="username" placeholder="e.g., engineer_01" required>
+      </div>
+
+      <div class="form-group">
+        <label>Access Key (Password)</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+      </div>
+
+      <button type="submit" id="login-btn" class="btn-auth">Authenticate</button>
+    </form>
+
+    <div
+      style="margin-top: 25px; padding: 15px; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 4px; text-align: left;">
+      <div
+        style="font-size: 0.7rem; font-weight: 800; color: #64748b; text-transform: uppercase; margin-bottom: 5px; letter-spacing: 0.5px;">
+        Demo Credentials
+      </div>
+      <div style="font-size: 0.85rem; font-family: 'Courier New', monospace; color: #1e293b; line-height: 1.4;">
+        ID: <strong>guest_engineer</strong><br>
+        KEY: <strong>clouduser</strong>
+      </div>
+    </div>
+
+    <div class="auth-footer">
+      New Engineer? <a href="register.html">Initialize Workspace</a>
+    </div>
+  </div>
+
+  <script type="module" src="js/login.js"></script>
+</body>
+
+</html>

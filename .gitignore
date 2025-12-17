@@ -1,0 +1,9 @@
+# Ignore Backend Secrets & Virtual Env
+backend/.env
+backend/.venv/
+backend/venv/
+backend/__pycache__/
+backend/db.sqlite3
+
+# Ignore Frontend junk
+frontend/.DS_Store

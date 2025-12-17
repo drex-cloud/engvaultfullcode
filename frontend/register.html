@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EngiVault | Initialize</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="auth-mode">
+
+  <div class="auth-card">
+    <div class="auth-header">
+      <div class="auth-title">Initialize Workspace</div>
+      <div class="auth-subtitle">Create your secure engineering repository</div>
+    </div>
+
+    <div id="status-terminal" class="hidden"
+      style="margin-bottom: 20px; padding: 12px; border-radius: 4px; font-size: 0.85rem; text-align: left; border-left: 4px solid #3b82f6; background: #f0f7ff; color: #1e40af;">
+      <div
+        style="font-weight: 800; text-transform: uppercase; font-size: 0.65rem; margin-bottom: 4px; letter-spacing: 1px;">
+        System Status</div>
+      <div id="status-text" style="font-family: 'Courier New', monospace;">Preparing workspace environment...</div>
+    </div>
+
+    <form id="register-form">
+      <div class="form-group">
+        <label>Username (System ID)</label>
+        <input type="text" id="username" placeholder="Choose a System ID" required>
+      </div>
+
+      <div class="form-group">
+        <label>Contact Email</label>
+        <input type="email" id="email" placeholder="name@engineering.com" required>
+      </div>
+
+      <div class="form-group">
+        <label>Create Access Key</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+      </div>
+
+      <button type="submit" id="reg-btn" class="btn-auth">Initialize Vault</button>
+    </form>
+
+    <div class="auth-footer">
+      Already have a workspace? <a href="login.html">Login here</a>
+    </div>
+  </div>
+
+  <script type="module" src="js/auth.js"></script>
+</body>
+
+</html>

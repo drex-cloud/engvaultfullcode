@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EngiVault | Systems</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav id="topbar">
+    <div class="brand">Engi<span>Vault</span></div>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search System ID or Keyword...">
+    </div>
+    <button id="logout-btn" class="btn-nav">LOGOUT</button>
+  </nav>
+
+  <div class="workspace">
+
+    <div class="metrics-panel">
+      <div class="metric-card">
+        <div class="metric-label">Active Systems</div>
+        <div class="metric-val" id="unit-count">0</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Server Status</div>
+        <div class="metric-val" style="color:#10b981;">ONLINE</div>
+      </div>
+      <div class="metric-card" style="opacity: 0.7; position: relative; overflow: hidden;">
+        <div class="metric-label">Capacity <span class="badge-soon">V2.0</span></div>
+        <div style="margin-top: 10px; height: 10px; background: #e2e8f0; border-radius: 5px;">
+          <div style="width: 45%; height: 100%; background: #94a3b8; border-radius: 5px;"></div>
+        </div>
+        <div style="font-size: 0.8rem; margin-top: 5px; color: #94a3b8;">Analytics Module Locked</div>
+      </div>
+    </div>
+
+    <div
+      style="display:flex; gap:10px; margin-bottom:30px; background:white; padding:15px; border-radius:6px; border:1px solid #cbd5e1;">
+      <input type="text" id="new-unit-name" placeholder="Initialize New System (e.g., 'SYS-101: Fluid Mechanics')"
+        style="flex:1; padding:10px; border:1px solid #e2e8f0; border-radius:4px; font-family:var(--code-font);">
+      <button id="add-unit-btn"
+        style="background:var(--primary); color:white; border:none; padding:0 25px; border-radius:4px; font-weight:bold; cursor:pointer;">INITIALIZE</button>
+    </div>
+
+    <div id="units-list">
+      <p style="text-align:center; color:#64748b;">Retrieving engineering data...</p>
+    </div>
+  </div>
+
+  <div id="toast"></div>
+
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+
+</html>
