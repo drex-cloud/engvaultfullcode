@@ -4,7 +4,7 @@
 
 ## 🔗 Live Deployments
 * **Production UI (Vercel):** [https://engvault-frontend.vercel.app/dashboard]
-* **Production API (Render):** []
+* **Production API (Render):** [https://drex-notes-api.onrender.com]
 
 ---
 
